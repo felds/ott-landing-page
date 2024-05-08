@@ -79,6 +79,18 @@ a {
     display: inline-block;
 }
 
+/* Buttons */
+.btn {
+    padding: 1em;
+    background: var(--cl-secondary);
+    color: var(--cl-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: 0.125rem solid transparent;
+    display: inline-block;
+}
+
 /* 
 
     Pages
@@ -87,4 +99,8 @@ a {
 .home__blurb {
     background: var(--cl-secondary);
     padding-block: 3rem;
+}
+.home__check-out {
+    padding-block: 3rem;
+    text-align: center;
 }
