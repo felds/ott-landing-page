@@ -26,14 +26,25 @@ html,
 body {
     height: 100%;
 }
+
 a {
     outline-offset: 0.2rem;
 }
 
+li {
+    margin-top: 1em;
+}
+
 /* 
+    Utility
+*/
 
+.headline {
+    font-weight: 600;
+}
+
+/* 
     Blocks
-
 */
 
 /* Layout */
@@ -116,4 +127,9 @@ a {
 .home__check-out {
     padding-block: 3rem;
     text-align: center;
+}
+
+.manifesto__copy {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
 }
