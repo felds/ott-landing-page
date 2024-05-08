@@ -46,6 +46,16 @@ a {
     flex-grow: 1;
 }
 
+/* Hero */
+.hero {
+    /* height: 18rem; */
+    background: linear-gradient(#284b33b3, #284b33b3),
+        left center / cover url("/hero-bg-cropped.jpg");
+    padding: 4rem;
+    display: grid;
+    place-items: center;
+}
+
 /* Text-flow wrapper */
 .text-flow {
     --max-width: 65ch;
@@ -77,6 +87,9 @@ a {
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
+}
+.footer__email-icon {
+    margin: 0.5rem;
 }
 
 /* Buttons */
