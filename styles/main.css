@@ -29,10 +29,22 @@ body {
 
 a {
     outline-offset: 0.2rem;
+    text-underline-offset: 0.25rem;
+    color: var(--cl-primary);
 }
 
 li {
     margin-top: 1em;
+}
+
+hr {
+    /* margin-block: 3rem !important; */
+    background: red;
+    border: none;
+    border-bottom: 1px solid var(--cl-primary);
+    opacity: 0.6;
+    width: 50%;
+    margin: 3rem auto !important;
 }
 
 /* 
