@@ -12,9 +12,16 @@ html {
 
     /* Root styles */
     font-family: var(--ff-sans-serif);
+    background: var(--cl-neutral-high);
+    color: var(--cl-primary);
 }
 
-/* Naked tags */
+/* 
+
+    Naked tags 
+    
+*/
+
 html,
 body {
     height: 100%;
@@ -23,17 +30,43 @@ a {
     outline-offset: 0.2rem;
 }
 
+/* 
+
+    Blocks
+
+*/
+
 /* Layout */
 .layout {
-    background: gold;
-    min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.layout__content {
+    flex-grow: 1;
+}
+
+/* Text-flow wrapper */
+.text-flow {
+    --max-width: 65ch;
+    --min-side-spacing: 2rem;
+
+    /* background: #f073; */
+    width: min(var(--max-width), 100vw - 2 * var(--min-side-spacing));
+    margin-inline: auto;
+}
+.text-flow > * {
+    margin-top: 1em;
+}
+.text-flow > *:first-child {
+    margin-top: unset;
 }
 
 /* Footer */
 .footer {
     background: var(--cl-primary);
     color: var(--cl-secondary);
-    padding: 4rem;
+    padding-block: 4rem;
 }
 .footer__email {
     display: grid;
@@ -44,4 +77,14 @@ a {
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
+}
+
+/* 
+
+    Pages
+
+*/
+.home__blurb {
+    background: var(--cl-secondary);
+    padding-block: 3rem;
 }
