@@ -1,0 +1,47 @@
+html {
+    /* Colors */
+    --cl-green: #284b33;
+    --cl-cream: #f5f0eb;
+    --cl-white: #ffffff;
+    --cl-primary: var(--cl-green);
+    --cl-secondary: var(--cl-cream);
+    --cl-neutral-high: var(--cl-white);
+
+    /* Fonts */
+    --ff-sans-serif: "Plus Jakarta Sans", sans-serif;
+
+    /* Root styles */
+    font-family: var(--ff-sans-serif);
+}
+
+/* Naked tags */
+html,
+body {
+    height: 100%;
+}
+a {
+    outline-offset: 0.2rem;
+}
+
+/* Layout */
+.layout {
+    background: gold;
+    min-height: 100%;
+}
+
+/* Footer */
+.footer {
+    background: var(--cl-primary);
+    color: var(--cl-secondary);
+    padding: 4rem;
+}
+.footer__email {
+    display: grid;
+    place-items: center;
+}
+.footer__email a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
