@@ -78,6 +78,10 @@ hr {
     display: grid;
     place-items: center;
 }
+.hero__logo {
+    width: 19rem;
+    height: auto;
+}
 
 /* Text-flow wrapper */
 .text-flow {
