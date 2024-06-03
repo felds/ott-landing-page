@@ -3,6 +3,7 @@ html {
     --cl-white: #ffffff;
     --cl-sand: #f2ddbf;
     --cl-leaf: #204133;
+    --cl-leaf-hsl: 155 34% 19%;
     --cl-cloud: #eff0ef;
     --cl-sky: #d7e7ec;
     --cl-coal: #333333;
@@ -94,8 +95,12 @@ hr {
 
 /* Hero */
 .hero {
-    /* height: 18rem; */
-    background: linear-gradient(#284b33b3, #284b33b3),
+    --bg-overlay-opacity: 40%;
+
+    background: linear-gradient(
+            hsl(var(--cl-leaf-hsl) / var(--bg-overlay-opacity)),
+            hsl(var(--cl-leaf-hsl) / var(--bg-overlay-opacity))
+        ),
         left center / cover url("/hero-bg-cropped.jpg");
     padding: 4rem;
     display: grid;
