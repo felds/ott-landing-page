@@ -11,7 +11,8 @@ html {
     --cl-neutral-high: var(--cl-white);
 
     /* Fonts */
-    --ff-sans-serif: "Plus Jakarta Sans", sans-serif;
+    --ff-sans-serif: "Lato", sans-serif;
+    --ff-display: "Wix Madefor Display", sans-serif;
 
     /* Root styles */
     font-family: var(--ff-sans-serif);
@@ -37,6 +38,25 @@ a {
 }
 
 li {
+    margin-top: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-display);
+}
+h1 {
+    font-size: 200%;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 125%;
+}
+
+p {
     margin-top: 1em;
 }
 
@@ -88,7 +108,7 @@ hr {
 
 /* Text-flow wrapper */
 .text-flow {
-    --max-width: 65ch;
+    --max-width: 80ch;
     --min-side-spacing: 2rem;
 
     /* background: #f073; */
