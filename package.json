@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "devDependencies": {
+        "prettier-plugin-css-order": "^2.1.2",
         "typescript": "^5.2.2",
         "vite": "^5.2.0"
     },
@@ -16,6 +17,9 @@
         "trailingComma": "all",
         "semi": false,
         "printWidth": 100,
-        "tabWidth": 4
+        "tabWidth": 4,
+        "plugins": [
+            "prettier-plugin-css-order"
+        ]
     }
 }
