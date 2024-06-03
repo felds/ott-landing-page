@@ -1,10 +1,13 @@
 html {
     /* Colors */
-    --cl-green: #284b33;
-    --cl-cream: #f5f0eb;
     --cl-white: #ffffff;
-    --cl-primary: var(--cl-green);
-    --cl-secondary: var(--cl-cream);
+    --cl-sand: #f2ddbf;
+    --cl-leaf: #204133;
+    --cl-cloud: #eff0ef;
+    --cl-sky: #d7e7ec;
+    --cl-coal: #333333;
+    --cl-primary: var(--cl-leaf);
+    --cl-secondary: var(--cl-cloud);
     --cl-neutral-high: var(--cl-white);
 
     /* Fonts */
